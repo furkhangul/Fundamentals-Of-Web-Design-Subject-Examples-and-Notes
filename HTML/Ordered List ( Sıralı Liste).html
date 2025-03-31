@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List Kullanımı</title>
+</head>
+<body>
+    <p>
+        Sıralı Liste ( ORDERAD LİST)
+    </p>
+
+    <ol>
+        <li>
+            Merhaba
+        </li>
+        <li> <!-- List İtme demek -->
+            Benim
+        </li>
+        <li>
+            Adım
+        </li>
+        <li>
+            Furkan
+        </li>
+    </ol>
+
+
+    <ol type="1"> <!-- Standart olarak zaten 1, 2, 3 diye gidiyor ama yazmak istersek böyle yazılır-->
+        <li>Ahmet</li>
+        <li>Furkan</li>
+        <li>Arif</li>
+    </ol>
+
+
+
+
+    <ol type="a"> <!-- Küçük a ile başlarsak a, b, c şeklinde listeler-->
+        <li>Kenan</li>
+        <li>Akif</li>
+        <li>Emir</li>
+    </ol>
+
+
+    <ol type = "A"> <!-- Büyük A ile yazarsak A, B, C şeklinde sıralama devam eder.-->
+        <li>Elif</li>
+        <li>Ayşe</li>
+        <li>Özge</li>
+    </ol>
+
+    <ol type = "I"> <!-- Büyük I şeklinde yazıdığı zaman romen rakamlarına göre sıralar.-->
+        <li>Elif</li>
+        <li>Ayşe</li>
+        <li>Özge</li>
+    </ol>
+    <ol type = "i"> <!-- küçük i şeklinde yazıdığı zaman romen rakamlarına küçük sayılara göre sıralar.-->
+        <li>Elif</li>
+        <li>Ayşe</li>
+        <li>Özge</li>
+    </ol>
+
+
+    <!-- İç içe liste oluşturmakta mümkün-->
+     <ol type="i">
+        <li>Meyveler</li>
+            <ul type="circle">
+                <li>Elma</li>
+                <li>Armut</li>
+                <li>Kiraz</li>
+            </ul>
+        <li>Sebzeler</li>
+            <ol type="A">
+                <li>Domatez</li>
+                <li>Biber</li>
+                <li>Patlıcan</li>
+            </ol>
+        <li>Baharatlar</li>
+            <ol type="I">
+                <li>Kimyon</li>
+                <li>Karabiber</li>
+                <li>Kekik</li>
+            </ol>
+     </ol>
+</body>
+</html>
