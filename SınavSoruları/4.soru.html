@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin ve Padding Örneği</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border: 2px solid black;
+            margin: 30px auto; 
+            padding: 20px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: green;
+            margin-bottom: 30px;
+            padding-bottom: 10px; 
+            border-bottom: 1px solid #eee;
+        }
+        
+        .box {
+            background-color: black;
+            color: white;
+            margin: 15px; 
+            padding: 25px;
+            border-radius: 5px;
+        }
+        
+        .special-box {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            margin-left: 50px; 
+            margin-right: 20px; 
+            
+            padding: 15px 30px;
+            background-color: #e74c3c;
+        }
+        
+        .nested-box {
+            background-color: #2ecc71;
+            margin: 10px 0;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Margin ve Padding Örnekleri</h1>
+        
+        <div class="box">
+            <p>Bu bir normal kutu. Her yönde 15px margin ve 25px padding var.</p>
+        </div>
+        
+        <div style="background-color: #9b59b6; color: white; margin: 20px 10px; padding: 30px 15px;">
+            <p>Bu kutuda inline CSS ile margin ve padding ayarları yapıldı.</p>
+            <p>Margin: 20px üst-alt, 10px sağ-sol</p>
+            <p>Padding: 30px üst-alt, 15px sağ-sol</p>
+        </div>
+        
+        <div class="special-box">
+            <p>Bu kutuda farklı yönlerde farklı margin ve padding değerleri kullanıldı.</p>
+            <div class="nested-box">
+                <p>İç içe kutu örneği. Bu kutunun margin'i sadece üst ve alt kısımda var.</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 50px; padding: 10px; background-color: #f1c40f; color: #333;">
+            <p>Bu kutuda sadece üst margin 50px olarak ayarlandı ve tüm yönlerde 10px padding var.</p>
+        </div>
+    </div>
+</body>
+</html>
