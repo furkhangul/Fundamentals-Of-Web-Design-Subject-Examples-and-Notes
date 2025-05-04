@@ -1,0 +1,22 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  footer {
+    margin-top: 50px;
+  }
+  
