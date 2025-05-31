@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Container yapısı:
+
+    Container yapısı, web sayfa içeriğini sınırlamak ve hizalamak için kullanılan bir yapıdır.
+    Yani sayfadaki buton, görsel, video, metin gibi içerikleri belli bir genişlikte tutar.
+    Temel amacı, içeriği ekrana yaymak yerine daha okunabilir ve düzenli bir alan içinde sunmaktır.
+    
+    
+    Neden Kullanılır:
+
+    Sayfa içeriğini ekranın kenarlarına yapışmaktan kurtarır. 
+    Farklı cihaz boyutlarıdnaki içeriği daha iyi görünmesini sağlamaktadır.
+    Responsive tasarımı için temel yapı taşlarından biridir.
+    
+    
+    Not:
+    Responsive yani duyarlı tasarım, web sitenin farklı ekran boyutlarına (telefon,tablet,bilgisayar) gibi araçlarda 
+    uyum sağlayarak düzgün görünmesi demektir.
+    ->Küçük ekranda içerik daralır, satırlar alt alta girer.
+    ->Büyük ekranda daha geniş ve yayılmış şekilde görüntülenir.
+    ->Amaç: Kullanıcı hangi cihazı kullanırsa kullansın, site güzel ve kullanılabilir görünsün.
+
+    Bootstrap'ta 3 temel container türü vardır:
+
+    *Container
+    -sabit genişlikliklidir.
+    -ekran boyutuna göre otomatik olarak genişliği değişir ama her kırılma noktasında belirli sabit genişlikler kullanılır.
+    -küçük ekranda dar, büyük ekranda geniş olur.
+    -genelde en yaygın kullanımıdır.
+
+    *Container-fluid
+    -%100 genişliklidir.
+    -hangi ekran boyutu olursa olsun, ekranın tamamını kaplar.
+    -tam genişlikte tasarımlar yapmak istenildiği zaman kullanılır.(arkaplan resiminin tüm ekranı kaplamasını istediğimizde kullanılır.)
+
+    *Container-xxl, Container-xl, Container-lg, Container-md, Container-sm
+    -bu özel container sınıfları sadece belirli ekran boyutları için sabit genişlik sağlar.
+    -Örneğin container-md kullanılırsa:
+        md ve üzerindeki cihazlar için sabit genişlik uygulanır.
+        daha küçük ekranlar için %100 genişliğe geçer.
+
+    DETAY:
+    şimdi elimdeki sayfaya container açarak alan oluşturduk fakat bu yalnızca yeterli olmayacaktır.
+    satır açmak için row kullanmamız gerekiyor bunun için de bootstrap row kodunu kullanacağız.
+    div class="row"
+    şeklinde olacak.
+    daha sonra bu açılan satırların içerisini doldurmamız gerkeiyor bunun için de col kullanacağız. 
+    her row içinde maximum 12 row kullanabiliriz.
+    örnek collar ise:
+    4 - 4 - 4 
+    3 - 5 - 4
+    1 - 1 - 1 - 1 - 4 - 4
+    gibi hepsini 12'ye tamamlıyoruz
+    4 - 4 - 4 - 1
+    şeklinde yazılan col da ise sondaki 1 fazlalık olduğu için bir alt satıra gidecektir.
+    -->
+</body>
+</html>
