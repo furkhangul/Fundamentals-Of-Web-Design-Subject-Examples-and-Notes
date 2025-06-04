@@ -1,0 +1,70 @@
+<!--
+VueJS Nedir ?
+Modern web arayüzleri oluşturmak için kullanılan açık kaynaklı, progresif bir javaScript framework'üdür.
+Küçük projelerde sadece HTML üzerine dinamiklik katmak için kullanılabileceği gibi, büyük çaplı SPA(Single Page Application) projelerinde de kullanılabilir.
+
+Vue.js arayüzü küçük ve yeniden kullanılabilir parçalara (copmanentlere) bölmektedir.
+
+Kullanıcı girdilerini takip etmek ve işlemek için v-model gibi yapılar kullanmaktadır.
+
+Vue Router ile tek sayfa uygulamaları geliştirilebilmektedir.
+
+Uygulama durumuna merkezi olarak yönetebilme kapasitesine sahiptir. 
+
+Vue.js 3 şekilde çalışır:
+1) Reactive(Tepkisel Sistem)
+2) Virtual DOM
+3) Directive’ler ve Template Sistemi
+-->
+
+<!--
+Vue'yi kurmak için 3 farklı yöntem vardır.
+-->
+
+<!--
+CDN ile bağlantısı ile :
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ message }}</h1>
+      <input v-model="message">
+    </div>
+
+    <script>
+      const app = Vue.createApp({
+        data() {
+          return {
+            message: 'Merhaba Vue!'
+          }
+        }
+      });
+      app.mount('#app');
+    </script>
+  </body>
+</html
+-->
+
+<!--
+Vue CLI ile Kurulum:
+npm install -g @vue/cli
+
+ardından:
+vue create proje-adi
+
+hemen sonra:
+cd proje-adi
+npm run serve
+-->
+
+
+<!--
+Vite ile Kurulum:
+npm create vite@latest vue-projem --template vue
+cd vue-projem
+npm install
+npm run dev
+-->
