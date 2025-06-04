@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ürün Listesi</title>
+</head>
+<body>
+  <h1>Ürün Listesi</h1>
+  <ul>
+    <% liste.forEach(function(urun) { %>
+      <li>
+        <strong><%= urun.name %></strong> - Fiyat: <%= urun.price %> ₺
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
+<!--
+| Kod                  | Anlamı                                         |
+| -------------------- | ---------------------------------------------- |
+| `<% %>`              | JavaScript kodu çalıştırır (ama HTML'e yazmaz) |
+| `<%= %>`             | Değeri HTML olarak yazdırır                    |
+| `liste.forEach(...)` | JavaScript dizisi üzerinde döngü yapar         |
+
+-->
