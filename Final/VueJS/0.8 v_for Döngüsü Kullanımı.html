@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="kod">{{template}}</div>
+
+  <script>
+    const app = Vue.createApp({
+      template:`
+
+      <ul>
+        <li v-for="gun in gunler">{{gun}}</li>
+      </ul>
+      
+      <ul>
+        <li v-for="u in user">İSİM:{{u.isim}},<br> SOYİSİM:{{u.soyad}},<br> YAS:{{u.yas}},<br>BOLUM:{{u.bolum}}<br><br>
+        </li> 
+        
+      <ul>
+      `,
+
+
+
+      data(){
+        return{
+          gunler : ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"],
+
+          user: [
+              {isim:"Furkan", soyad:"Gül", yas:21, bolum:"Yazılım Mühendisliği"},
+              {isim:"Faruk",soyad:"Tekin",yas:20,bolum:"İktisat"},
+              {isim:"Kadir",soyad:"Akkoyun",yas:23,bolum:"İlahiyat"}
+          ]
+        };
+      },
+
+
+      methods:{
+        ekle(){
+         
+        }
+      }
+
+
+    });
+
+    app.mount("#kod")
+  </script>
+</body>
+</html>
