@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <title>Vue Menü</title>
+  <style>
+    .selected {
+      background-color: green !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="kod"></div>
+
+  <script>
+    const app = Vue.createApp({
+      template: `
+        <h2 style="text-align:center; margin:50px;">Furkan Gül</h2>
+        <ul style="list-style:none; padding: 0;">
+          <li v-for="m in menu" 
+              type="button" 
+              class="btn btn-primary d-block mb-3" 
+              :class="{ selected: m.selected }" 
+              @click="clickfunc(m)">
+            {{ m.name }}
+          </li>
+        </ul>
+        <hr>
+        <h4>Seçilen Menüler:</h4>
+        <ul>
+          <li v-for="item in selectedMenus">{{ item.name }}</li>
+        </ul>
+      `,
+
+      data() {
+        return {
+          menu: [
+            { name: "Ana Sayfa", selected: true },
+            { name: "Hakkımda", selected: false },
+            { name: "Blog", selected: true },
+            { name: "İletişim", selected: false }
+          ]
+        };
+      },
+
+      methods: {
+        clickfunc(item) {
+          item.selected = !item.selected;
+        }
+      },
+
+      computed: {
+        selectedMenus() {
+          return this.menu.filter(i => i.selected);
+        }
+      }
+    });
+
+    app.mount("#kod");
+  </script>
+</body>
+</html>
