@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="kod">{{template}}</div>
+
+  <script>
+    const app = Vue.createApp({
+      template:`
+      <div :style="style">Merhaba FURKAN<div>
+      <!-- VEYA v-bind şeklinde kullanımı mevcuttur.-->
+      <div v-bind:style="style">Merhaba Fatih<div>
+
+      `,
+
+
+
+      data(){
+        return{
+          style:"color:green; text-align:center"
+        };
+      },
+
+
+      methods:{
+        ekle(){
+         
+        }
+      }
+
+
+    });
+
+    app.mount("#kod")
+  </script>
+</body>
+</html>
