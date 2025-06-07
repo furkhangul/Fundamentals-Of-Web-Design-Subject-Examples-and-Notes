@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="kod">{{template}}</div>
+
+  <script>
+    const app = Vue.createApp({
+      template:`
+
+      <h1>Ders 7</h1>
+      <div v-if="!deger" >Deneme Yazısı 1</div>
+      <div v-if="deger" >Deneme Yazısı 2</div>
+      <!--Burada eğer deger ifadesi doğru ise yazıyı gösteriyor yanlış ise göstermiyor.-->
+      <div v-show="!deger" >Deneme Yazısı 3</div>
+      <div v-show="deger" >Deneme Yazısı 4</div>
+      <!--Burada show etiketi ise aynı işe yarıyor fakat biz f12 bastığımızda v-if değeri gözükmez iken v-show değeri ise gözükmekte. Aralarında yalnızca böyle bir fark var. Eğer kodu privete almak istiyorsak bu if kullanmamız gerekmektedir.-->
+      `,
+      data(){
+        return{
+          deger:true
+        };
+      },
+      methods:{
+        ekle(){
+          console.log("Ekle Fonksiyonu Çalıştırıldı !")
+        }
+      }
+
+    });
+
+    app.mount("#kod")
+  </script>
+</body>
+</html>
