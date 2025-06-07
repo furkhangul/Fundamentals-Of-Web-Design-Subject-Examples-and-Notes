@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Vue JS import -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="code">{{template}}</div>
+  <script>
+      const app = Vue.createApp({
+        template:`
+        <h1>Ders Adı: {{dersadi}}</h1>
+        <h1>İçeriği: {{icerik}}</h1>
+        <h1>Beğeni Sayısı: {{like}}</h1>
+        `,
+    data(){
+        return{
+                dersadi: "Vue.js",
+                icerik: "Data Kavramı",
+                like: 7
+            };
+        }
+    });
+
+    app.mount(".code")
+  </script>
+</body>
+</html>
