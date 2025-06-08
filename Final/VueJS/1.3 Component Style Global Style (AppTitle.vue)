@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <h3>{{ title }}</h3>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "AppTitle",
+  data() {
+    return {
+      title: "Furkan Tarafından Geliştirilmektedir."
+    }
+  }
+}
+</script>
+<!-- SCOPED KULLANMASAYDIM STYLE DOSYASINDAKİ CSSLER TÜM DOSYALARDA KULLANILIRDI-->
+<style scoped>
+ h3{
+    color:rgb(24, 121, 211);
+    font-size: 50px;
+    font-weight: 700;
+ }
+</style>
