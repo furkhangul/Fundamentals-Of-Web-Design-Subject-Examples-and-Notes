@@ -1,0 +1,10 @@
+Kapsayıcı (Container)Nedir ? 
+Docker kapsayıcıları, çalışan uygulamalar için hafif sanallaştırılmış çalışma ortamıdır. 
+
+Uygulamaları yalıtılmış ortamlara (Kapsayıcılara) paketlemek; uygulamaları geliştirmeyi,
+dağıtmayı, bakımını yapmayı ve kullanımını da kolaylaştırır.
+
+Her kapasyıcı, belirli bir uygulamayı çalıştırmak için gereken kod, sistem araçları, çalışma zamanı, kitaplar,
+bağımlılıklar ve yapılandırma dosyalarını içeren bir yazılım paketini temsil eder.
+
+Ana bilgisayardan ve ana bilgisayar üzerinde .alışan diğer örneklerde bağımsız ve yalıtılmıştır.
